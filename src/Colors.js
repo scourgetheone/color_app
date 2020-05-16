@@ -1,5 +1,5 @@
 
-export function GenerateColors() {
+export function generateColors() {
     const colors = [];
 
     for (let r = 8; r <= 256; r += 8) {
