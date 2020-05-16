@@ -6,17 +6,11 @@ This is an application that generates a 256 x 128 image where each pixel is a di
 
 ## Overview and Instructions
 
-The image is generated once when the page loads.
+First, after cloning the repo, run yarn install or npm install to install the dependencies.
 
-You can check from the console some logs of the generation process. The app generates 32768 colors using the Colors.generateColors() function, which then is used in App.generateImage() when mapping the pixels to a sine function.
+### `yarn install`
 
-For debugging, the interface lets you inspect each pixel in the generated image by simply hovering your mouse over the image, or by filling in the x,y coordinates in the form given and then pressing the "Get color of pixel" button.
-
-![alt text](./screenshot.png "Application screenshot")
-
-## Available Scripts
-
-In the project directory, you can run:
+Then, while still in the project directory, you can run:
 
 ### `yarn start`
 
@@ -25,4 +19,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+----------
+
+The image is generated once when the page loads.
+
+You can check from the console some logs of the generation process. The app generates 32768 colors using the Colors.generateColors() function, which then is used in App.generateImage() when mapping the pixels to a sine function.
+
+For debugging, the interface lets you inspect each pixel in the generated image by simply hovering your mouse over the image, or by filling in the x,y coordinates in the form given and then pressing the "Get color of pixel" button.
+
+![alt text](./screenshot.png "Application screenshot")
+
 
