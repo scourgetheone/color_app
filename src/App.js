@@ -84,11 +84,11 @@ function App() {
         const sineArcLength = IMAGE_HEIGHT / 32;
         const MAX_WHILE_LOOPS = IMAGE_HEIGHT * 2;
 
-        let i = -IMAGE_HEIGHT;
+        let i = -sineArcLength;
         let pixelsFilled = 0;
 
         console.log(`Pixels filled to image: ${pixelsFilled}`);
-        console.log(`Iterations: ${i}`);
+        console.log(`Iterations: ${i+sineArcLength}`);
         console.log(`Colors left: ${colors.length}`);
 
         // Iterate over the x axis, apply a sine function, and then increment
@@ -135,7 +135,7 @@ function App() {
 
         console.log(`Image processed:`);
         console.log(`Pixels filled to image: ${pixelsFilled}`);
-        console.log(`Iterations: ${i}`);
+        console.log(`Iterations: ${i+sineArcLength}`);
         console.log(`Colors left: ${colors.length}`);
     }
 
